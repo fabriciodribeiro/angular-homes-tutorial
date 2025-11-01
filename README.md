@@ -23,3 +23,14 @@ Install dependencies and run locally:
 ```sh
 npm install
 npm run start
+
+
+## Quick start - Container
+
+Prerequisites: Docker desktop
+
+Install dependencies and run locally:
+
+```sh
+docker build -t image_name .
+docker run --rm -d --name container_name -p 4200:4200 -d image_name
