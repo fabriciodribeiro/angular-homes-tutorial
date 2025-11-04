@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  homes-app:
+    image: node:20
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: homes-app
+    environment:
+      - ACCEPT_EULA=Y
+    expose:
+      - 4200
+    ports:
+      - 8080:4200
