@@ -36,8 +36,8 @@ services:
       dockerfile: dockerfile
     container_name: homes-app
     environment:
-      - VIRTUAL_HOST=cliquenegocio.cloud,localhost
-      - LETSENCRYPT_HOST=cliquenegocio.cloud,localhost
+      - VIRTUAL_HOST=cliquenegocio.cloud
+      - LETSENCRYPT_HOST=cliquenegocio.cloud
       - LETSENCRYPT_EMAIL=fabriciodribeiro@hotmail.com
     expose:
       - "80"
